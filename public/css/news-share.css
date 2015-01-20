@@ -1,0 +1,216 @@
+/**
+ * 
+ * @file:     
+ * @author: myqianlan   
+ * @update:   2015年1月16日09:59:52;
+ * @note:     
+ * @doc:      
+ */
+/* ==========================================================================
+   页面重设
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; }
+
+/* ==========================================================================
+   新闻分享顶部
+   ========================================================================== */
+header {
+  background-color: #f4f4f4;
+  background-image: url(../img/顶部点图.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0 4px 10px #D5D5D5; }
+
+h1 {
+  padding-top: 24px;
+  padding-bottom: 30px;
+  padding-left: 19%; }
+
+.logo img + img {
+  margin-left: 100px;
+  margin-bottom: 20px; }
+
+/* ==========================================================================
+   新闻内容部分
+   ========================================================================== */
+article {
+  margin: 20px auto 4px;
+  border: 1px solid #d6dbe1;
+  background-color: #fff;
+  width: 62%;
+  padding: 37px 40px 48px 40px; }
+
+article img {
+  text-align: center;
+  width: 62%;
+  max-width: 600px;
+  display: block;
+  margin: 52px auto 50px; }
+
+article .title {
+  color: #3f3f3f;
+  font-size: 26px;
+  text-align: center; }
+
+article .info {
+  color: #a2a2a2;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 33px; }
+
+article .content {
+  color: #3f3f3f;
+  font-size: 16px; }
+
+article .sub-title {
+  font-weight: bold;
+  margin-top: 46px; }
+
+article p {
+  line-height: 31px;
+  text-indent: 2em;
+  margin-top: 46px; }
+
+/* ==========================================================================
+   新闻分享底部
+   ========================================================================== */
+footer {
+  height: 189px;
+  background-color: #4fc1e9;
+  background-image: url(../img/底图点.png);
+  background-repeat: no-repeat;
+  background-position: 30%; }
+
+footer a {
+  display: inline-block;
+  margin-left: 25%;
+  margin-top: 55px; }
+
+section {
+  vertical-align: middle; }
+
+.download {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 2px; }
+
+.download:before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: #e74c3c;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.download-tip {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  margin-left: 20px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  vertical-align: super; }
+
+.download-tip:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  left: -10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.download-tip p {
+  color: #4fc1e9;
+  font-size: 16px; }
+
+.download-tip p + p {
+  font-size: 24px; }
+
+/* ==========================================================================
+   媒体查询部分
+   ========================================================================== */
+@media (max-width: 768px) {
+  article {
+    width: 98%;
+    padding: 37px 40px 48px 40px; }
+  h1 {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-left: 1%; }
+  .logo img + img {
+    margin-left: 0;
+    margin-bottom: 20px; }
+  footer {
+    background-position: 40%; }
+  footer a {
+    margin-left: 17%; } }
+
+@media (max-width: 480px) {
+  article {
+    padding: 37px 10px 48px 10px; }
+  footer {
+    height: 80px;
+    background-position: 50%; }
+  footer a {
+    margin-left: 10%; 
+  margin-top: 26px;} 
+ 
+  h1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 7%; }
+     .logo img {
+  height: 70px; }
+  .logo img + img {
+  margin-left: 0;
+  margin-bottom: 20px; }
+  .download {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 4px;
+  }
+
+.download:before {
+  height: 10px;
+  width: 10px; }
+
+.download-tip {
+  margin-left: 14px;
+  padding: 8px 14px; }
+
+.download-tip:before { }
+
+.download-tip p {
+  color: #4fc1e9;
+  font-size: 12px; }
+
+.download-tip p + p {
+  font-size: 16px; }
+  }
